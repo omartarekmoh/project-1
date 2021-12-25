@@ -1,0 +1,153 @@
+.search-block-top input {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #999999;
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: none;
+    color: #898989;
+    display: inline;
+    height: 43px;
+    min-width: 250px;
+    padding: 10px 40px 10px 10px;
+    transition: all 300ms ease-in 0s;
+    z-index: 1;
+}
+.search1{
+    margin-left: -70px;
+    font-size: 25px;
+    color:#9f9f9f;
+}
+.cart a{
+    text-decoration: none;
+    color: #898989d7;
+}
+.cart i{
+    font-size: 25px;
+}
+.cart p{
+    font-size: 20px;
+}
+
+.btn-group button{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding: 10px 24px;
+    position: relative;
+    text-transform: uppercase;
+  
+    
+}
+.home1{
+   text-decoration: none;
+   color: black;
+}
+
+/* form */
+
+.home-link{
+    text-decoration: none;
+    white-space: nowrap;
+}
+.fa-home{
+    transition: color 1s;
+    color: rgb(124, 124, 124);
+}
+.fa-home:hover{
+    color: #C06B81;
+}
+
+.title-contact{
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.card{
+    background: rgb(255, 255, 255) url(../images/contact-form.webp) repeat-x;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    
+}
+h5{font-size: 50px;}
+
+label{
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.input1 input , select{
+    width: 100%;
+}
+
+/* end form */
+
+
+footer{background-color: #363636;}
+
+.row h5{
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.footer-logo{
+    border-bottom: 1px solid #4a4a4a;
+    padding: 60px 0;
+}
+
+.address .fas {color: #C06B81;}
+
+.toggle-footer {list-style-type: none;}
+
+.toggle-footer li{
+    margin-left: -25px;
+    margin-top: 28px;
+    font-size: 14px;
+}
+.toggle-footer i{margin-right: 10px;}
+
+.toggle-footer li a{text-decoration: none;color: white;}
+
+.email{
+    background: transparent none repeat scroll 0 0;
+    color: #9e9e9e;
+    padding: 10px;
+    width: 100%;
+}
+.subscribe{
+    background-color: #C06B81;
+    color: white;
+    border: #C06B81 1s solid;
+}
+.footer-social .f {
+background: #3C5A99;
+color: #fff;
+padding: 10px;
+}
+.footer-social .t {
+background: #55ACEE;
+color: #fff;
+padding: 10px;
+}
+.footer-social .w {
+background: #F57D00;
+color: #fff;
+padding: 10px;
+}
+.footer-social .g1 {
+background: #DD4B38;
+color: #fff;
+padding: 10px;
+}
+.row{
+    
+    padding: 60px 0;
+}
+
+.payment{margin-left: 27%;}
+
+.footer-bottom{
+    background-color: #2F2F2F;
+   
+}
