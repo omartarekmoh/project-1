@@ -43,7 +43,7 @@ Route::post('/delete/{id}', function ($id) {
 
 Route::get('/cart', function () {
     $cart_items = CartItem::where('user_id', Auth::user()->id)->get();
-    return view('shopping-cart')->with('items', $cart_items);
+    return view('shopping-cart', compact('cart_items'));
 })->name('cart')->middleware('auth');
 
 

@@ -27,33 +27,31 @@ shopping cart
 
                 <tbody>
 
-                    @foreach ($items as $item)
+                    @foreach ($cart_items as $cart_item)
 
-                    @foreach ($item->items as $x)
                     <tr class="text-center">
                         <td class="product-thumbnail">
                             <a href="#">
-                                <img src="./images/{{ $x->image }}" alt="">
+                                <img src="./images/{{ $cart_item->item->image }}" alt="">
                             </a>
                         </td>
                         <td class="product-name content ">
-                            <a href="#">{{ $x->name }}</a>
+                            <a href="#">{{ $cart_item->item->name }}</a>
                         </td>
                         <td class="product-price">
-                            <span class="amount">{{ $x->price }}</span>
+                            <span class="amount">{{ $cart_item->item->price }}</span>
                         </td>
                         <td class="product-quantity">
                             <input type="number" value="1">
                         </td>
 
                         <td class="product-remove content">
-                            <form action="{{ route('delete', $item->id) }}" method="post">
+                            <form action="{{ route('delete', $cart_item->id) }}" method="post">
                                 @csrf
                                 <button type='submit'><i class="fa fa-times"></i></button>
                             </form>
                         </td>
                     </tr>
-                    @endforeach
                     @endforeach
 
                 </tbody>
@@ -92,16 +90,13 @@ shopping cart
                     <h2>Cart Totals</h2>
                     <div class="sub-total">
                         <p>SUBTOTAL
-                            <span class="ps-5 ms-5">@if ($items->isEmpty())
+                            <span class="ps-5 ms-5">@if ($cart_items->isEmpty())
                                 0
                                 @else
                                 @php
                                 $x = 0;
-                                foreach ($items as $item) {
-                                foreach ($item->items as $y) {
-                                $x += $y->price;
-                                }
-
+                                foreach ($cart_items as $cart_item) {
+                                $x += $cart_item->item->price;
                                 }
                                 echo $x;
                                 @endphp

@@ -10,10 +10,10 @@ class CartItem extends Model
     use HasFactory;
 
     public function users() {
-        return $this->hasMany(User::class, 'user_id');
+        return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function items() {
-        return $this->hasMany(Item::class,'id', 'item_id');
+    public function item() {
+        return $this->belongsTo(Item::class);
     }
 }
