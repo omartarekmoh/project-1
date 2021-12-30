@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Api\ShoppingCartController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\ItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+
+Route::get('/items', [ItemController::class, 'index']);
+Route::get('/items/{id}', [ItemController::class, 'show']);
+Route::post('/items', [ItemController::class, 'store']);
+Route::get('/cart', [ShoppingCartController::class, 'index']);
+Route::delete('/cart', [ShoppingCartController::class, 'delete']);

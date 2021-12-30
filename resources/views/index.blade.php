@@ -129,16 +129,7 @@ index
 
                 </div>
             </div><!-- 3 -->
-
-
-
-
-
-
-
         </div><!-- row -->
-
-
 
     </div><!-- container -->
 
@@ -182,8 +173,10 @@ index
             </div> <!-- img1 -->
 
             <form action="{{ route('store', $item->id) }}" method="POST">
+
                 @csrf
                 <button class="btn btn-secondary" type="submit">Add to cart</button>
+
             </form>
 
 
