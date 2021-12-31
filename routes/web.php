@@ -19,7 +19,7 @@ use App\Http\Controllers\ShoppingCartController;
 */
 
 Route::get('/', [ItemController::class, 'index'])->name('index');
-Route::post('/{id}', [ItemController::class, 'store'])->name('store')->middleware('auth');
+Route::post('/item/{id}', [ItemController::class, 'store'])->name('store')->middleware('auth');
 Route::post('/delete/{id}', [ShoppingCartController::class, 'delete'])->name('delete')->middleware('auth');
 Route::get('/cart', [ShoppingCartController::class, 'index'])->name('cart')->middleware('auth');
 
