@@ -169,24 +169,25 @@ index
 
                 <p class="pt-2 "> <i class="fas fa-pound-sign "></i> {{ $item->price }}</p>
 
+                <form action="{{ route('store', $item->id) }}" class=method="POST">
 
+                    @csrf
+                    <button class="btn btn-secondary" type="submit">Add to cart</button>
+
+                </form>
             </div> <!-- img1 -->
 
-            <form action="{{ route('store', $item->id) }}" method="POST">
-
-                @csrf
-                <button class="btn btn-secondary" type="submit">Add to cart</button>
-
-            </form>
 
 
-            @endforeach
+            
+
+                @endforeach
 
 
 
-        </div><!-- row -->
+            </div><!-- row -->
 
-    </div><!-- container -->
+        </div><!-- container -->
 
 </section><!-- banner-1 -->
 
