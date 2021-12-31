@@ -179,8 +179,6 @@ index
 
             @endforeach
 
-
-
         </div><!-- row -->
 
     </div><!-- container -->
