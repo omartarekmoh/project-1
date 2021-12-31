@@ -158,7 +158,7 @@ index
     <div class="container">
         <div class="row">
             @foreach ($items as $item)
-            <div class="col-md-2">
+            <div class="col-md-2 mb-4">
                 <img class="h-100 w-100 rounded-pill " src="images/{{ $item->image }}" alt="">
 
 
@@ -177,17 +177,13 @@ index
                 </form>
             </div> <!-- img1 -->
 
+            @endforeach
 
 
 
+        </div><!-- row -->
 
-                @endforeach
-
-
-
-            </div><!-- row -->
-
-        </div><!-- container -->
+    </div><!-- container -->
 
 </section><!-- banner-1 -->
 
